@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            Base title
+        {% endblock %}
+    </title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .code-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .code-container > h1 {
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .code-container div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .code_input button {
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .code_input p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .code_input label {
+            font-size: 20px;
+            margin: 0;
+            padding: 20px;
+        }
+        .code_input input {
+            border-radius: 10px;
+            font-size: 40px;
+            width: 95px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+{% block body %}
+    Base Body
+{% endblock %}
+
+</body>
+
+</html>

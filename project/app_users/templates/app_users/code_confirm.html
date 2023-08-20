@@ -1,0 +1,21 @@
+{% extends 'app_users/base.html' %}
+
+{% block title %}
+    Code Confirm
+{% endblock %}
+
+{% block body %}
+    <section class="code-container">
+        <h1>Code Confirm</h1>
+        <div>
+            <form method="post" class="code_input">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div>
+                    <button type="submit">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+{% endblock %}

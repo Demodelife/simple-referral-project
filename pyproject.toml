@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "simple-referral-project"
+version = "0.1.0"
+description = ""
+authors = ["Zaripov Ildar <zaripow.ildar@yandex.ru>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.4"
+djangorestframework = "^3.14.0"
+drf-spectacular = "^0.26.4"
+django-debug-toolbar = "^4.2.0"
+python-dotenv = "^1.0.0"
+gunicorn = "^21.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,19 @@
+{% extends 'app_users/base.html' %}
+
+{% block title %}
+    Sending Code
+{% endblock %}
+
+{% block body %}
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "{% url 'app_users:user-info' pk=pk %}";
+        }, 2000);
+    </script>
+
+    <section class="code-container">
+        <h1>Sending Confirm Code...</h1>
+    </section>
+
+{% endblock %}
